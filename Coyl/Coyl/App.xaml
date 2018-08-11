@@ -3,6 +3,23 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Coyl.App">
 	<Application.Resources>
-    
+        <ResourceDictionary>
+            <Style TargetType="Button">
+                <Setter Property="TextColor" Value="Silver"/>
+                <Setter Property="BackgroundColor" Value="SlateBlue"/>
+            </Style>
+            <Style TargetType="Switch">
+            </Style>
+            <Style TargetType="Label">
+                <Setter Property="HorizontalTextAlignment" Value="Start"/>
+                <Setter Property="TextColor" Value="SlateBlue"/>
+            </Style>
+            <Style TargetType="Slider">
+                <!--<Setter Property="BackgroundColor" Value="SlateBlue"/>-->
+            </Style>
+            <Style TargetType="StackLayout">
+                <Setter Property="BackgroundColor" Value="Black"/>
+            </Style>
+        </ResourceDictionary>
 	</Application.Resources>
 </Application>

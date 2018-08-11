@@ -1,14 +1,60 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
+
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Coyl"
              x:Class="Coyl.MainPage">
 
     <StackLayout>
-        <!-- Place new controls here -->
-    	<Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <Label Text="Coyl"
+               FontSize="40"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+        <ScrollView VerticalOptions="FillAndExpand"
+                    Margin="10">
+            <StackLayout Margin="30">
+                <Grid HorizontalOptions="FillAndExpand">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0" Text="Arm Coil"
+                           FontSize="24"
+                           FontAttributes="Bold"
+                           HorizontalOptions="FillAndExpand" />
+                    <Switch Grid.Column="1" x:Name="arm"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="CenterAndExpand" />
+                </Grid>
+                <Grid HorizontalOptions="FillAndExpand">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0" Text="Power On/Off"
+                           FontSize="24"
+                           FontAttributes="Bold"
+                           HorizontalOptions="FillAndExpand" />
+                    <Switch Grid.Column="1" x:Name="onoff"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="CenterAndExpand" />
+                </Grid>
+                <Grid HorizontalOptions="FillAndExpand">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0" Text="One-Shot"
+                           FontSize="24"
+                           FontAttributes="Bold"
+                           HorizontalOptions="FillAndExpand" />
+                    <Button Grid.Column="1" Text="Fire"
+                            FontSize="24"
+                            BorderWidth="1"
+                            HorizontalOptions="FillAndExpand" />
+                </Grid>
+            </StackLayout>
+        </ScrollView>
     </StackLayout>
 
 </ContentPage>
